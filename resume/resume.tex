@@ -1,0 +1,118 @@
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, lipsum, bibentry}
+\usepackage{scrextend}
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{fancyhdr}
+%\usepackage[czech]{babel}
+
+\geometry{
+	a4paper,
+	%bottom=10mm,
+	%top=10mm,
+}
+
+%\title{\bfseries\Huge Vojtech Letal}
+%\author{cv@vojt.in}
+\date{}
+%\fancyhf{}% Clear all headers/footers
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{filecontents}{publication.bib}
+	@inproceedings{letal2015finding,
+		title={Finding New Malicious Domains Using Variational Bayes on Large-Scale Computer Network Data},
+		author={Letal, Vojtech and Pevny, Tomas and Smidl, Vaclav and Somol, Petr},
+		booktitle={Advances in Approximate Bayesian Inference, NIPS 2015 Workshop},
+		year={2015}
+	}
+\end{filecontents}
+
+\begin{document}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+\clearpage
+\thispagestyle{empty}
+%\maketitle
+{\center\bfseries\huge Vojtech Letal}
+\hfill
+{\bf Email:} hire-me@vojt.in
+{\bf Phone:} +420775330515
+
+%\section*{Objective}
+%My objective is to be satisfied with my everyday job mainly by feeling productive and seeing results of my work.
+%I like playing with technologies, exploring data and getting deeper understanding of programming languages.
+%I love designing and producing high quality maintainable code.
+
+\section*{Professional Experience}
+\subsubsection*{\bf DS12 Resident at DataScience Inc. (Culver City, CA, USA)\hfill summer 2016}
+	 \begin{itemize}
+		\setlength\itemsep{-0.25em}
+		\item 1 of 9 residents selected to participate in a 12-week elite, intensive residency program
+		\item Passed through rigorous admissions process with 2.5\% acceptance rate
+		\item Implemented recommendation system with real client data using ALS and pattern mining in Spark
+		\item Trained churn prediction model on real client data and identified several likely causes of churn
+		\item Designed scalable production ETL pipeline which replaced current SQL-based solution
+	 \end{itemize}
+
+\subsubsection*{\bf Software engineer at Blindspot-Solutions (Prague, Czech Republic) \hfill 09/2015--present}
+	 \begin{itemize}
+		\setlength\itemsep{-0.25em}
+		\item Developed custom tailored software solutions for a variety of problems including data analysis and optimization
+		\item Contributed to visualization and optimization toolbox which allowed a European fast food company to optimize its supply chain by 80~km (50\%) or 1~hour (17\%) per delivery route
+		\item Worked on toolbox designed to analyze correlations between crimes and external conditions like weather using data from LAPD
+	 \end{itemize}
+
+\subsubsection*{R\&D in Cisco Systems (Prague, Czech Republic)\hfill 06/2014--08/2015}
+	 \begin{itemize}
+		\setlength\itemsep{-0.25em}
+		\item Collaborated with a team which developed state-of-the-art anomaly detection system on network traffic data
+		\item Implemented novel Bayesian inference algorithm to estimate probability of maliciousness of domains
+		\item Worked extensively with big data technologies such as Twitter, Scalding, and Apache Spark
+	 \end{itemize}
+
+\section*{Education}
+\subsubsection*{\bf Master’s degree (First-class honors) \hfill 09/2012--06/2015}
+\vspace{-1.5mm}
+Czech Technical University in Prague - Open Informatics - Artificial Intelligence
+\vspace{-1.5mm}
+\subsubsection*{\bf Bachelor’s degree \hfill 09/2009--06/2012}
+\vspace{-1.5mm}
+Czech Technical University in Prague - Communication, Multimedia and Electronics - Communication technology
+
+\section*{Skills}
+\begin{description}
+	\setlength\itemsep{0.05em}
+	\item[Languages] Czech (Native), English (Fluent)
+	\item[Programming]  Scala, Java SE/EE, Python, Shell scripting, C/C++
+	\item[Analytics]  Spark, Scalding, Map Reduce, Mathematica, Matlab, R
+\end{description}
+
+\section*{Patents}
+Vojtech Letal, Tomas Pevny and Petr Somol. Discovering yet unknown malicious domains using relational data. {\it Patent~pending.}
+
+\bibliographystyle{plain}
+\nobibliography{publication}
+
+\section*{Publications}
+\bibentry{letal2015finding}.
+
+\section*{Activities}
+\begin{description}
+	\setlength\itemsep{0.05em}
+	\item Rock climbing, Squash, Reading, Running, Pilates, Traveling
+\end{description}
+
+%\begin{description}
+%	\setlength\itemsep{0.05em}
+%	\item[Rock climbing] I usually go climbing several times a month. When I was on high-school I used to lead a course for kids.
+%	\item[Squash] I participated in an amateur squash league in Prague ending up in 17. league.
+%	\item[Other] Since I graduated I've tried to do more activities elaborate activities like reading, running, pilates, etc.
+%\end{description}
+
+{\vfill
+\scriptsize\hfill Yes this was typed in \LaTeX. Order of skills in descending order positively correlates with both my knowledge and preference.}
+
+%\fancyfoot[R]{Yes this was typed in \LaTeX. Skills somewhat correlate with both knowledge and preference in descending order.}
+
+\end{document}

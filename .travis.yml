@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+services: docker
+script:
+— wget https://raw.githubusercontent.com/blang/latex-docker/master/latexdockercmd.sh
+— chmod +x latexdockercmd.sh
+— ./latexdockercmd.sh make
+deploy:
+  provider: releases
+  secure: "J7Hz3Hf1xjq6mXePtQfAHS9R23bag0NOKCtAQur/khO6SqSIk9/LrtrDkUsjwQnd4Rvek1Ctaw3h5i3jTnOWEq2fAokvVjydo4bX2Kq6WBEpBZfnt2mgErxafQ6Dg9k6r4yggf6K9wXDNjs1fe2M+j4O4c8epGBxN8wyAF5f/E6Ykz/PhrIHcvoI/Wb7E6pNuJvOxmHNP4WHELlwU8GEd2RCthr9yQzo3v0v6kFnCZLW4bpS4TWJwzhq/nTwBL0/zAxe2fYXwdjF/qjGk+jigX0i1qB1p7QFSalgFgz4aON+sY/hTCWPG0gpFwX2vWwwJkYABSZ2TBmY4f7JBYGkrai8MitGVdHqxDtI1XTVxtb30ztXDNaStLL8cM1R+onx6GjFGE61NwT1twYFVeuFNepEWQBoCa+s7FZmyhKg+arU+3GmuTM28zKzQ9+DY3wEa6UpTgmu0rCQNYByTTgqQk9idZy5Mm7kYELRiAQNQrcWKmSsRBz8KSkgj5NDY1fvJvyOVb8Z5rueVJUqAOyr8rkTjTVC14ZWiKysqpkb27zyzmKeEE1trJs67JaoSDhCwp4Stt/pKwf/p9WMgdVLsQRetrV+yluTtKaCWkI3G+nMeYmAbNVgzlOWHraxY+a6WzjY+ovVTPAFsCLgHowgyHptsSrIkBbEoqKOCDyKJJc="
+  file: data/resume.pdf
+  on:
+    tags: true

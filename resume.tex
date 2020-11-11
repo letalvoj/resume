@@ -4,21 +4,13 @@
 \usepackage[margin=1.2cm]{geometry}
 \usepackage{fancyhdr}
 %\usepackage[czech]{babel}
+\usepackage{scrextend}
 
 \geometry{
 	a4paper,
 	%bottom=10mm,
 	%top=10mm,
 }
-
-%\title{\bfseries\Huge Vojtech Letal}
-%\author{cv@vojt.in}
-\date{}
-%\fancyhf{}% Clear all headers/footers
-\definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \begin{filecontents}{publication.bib}
 	@inproceedings{letal2015finding,
@@ -42,27 +34,22 @@
 \section*{About me}
 I am a machine learning engineer with rich experience including software engineering and applied research.
 During my career, I worked on several ML projects which taught me how to build a data processing pipelines and push models into production.
-I am writing production code mainly in Scala, Java, and most recently Python which allowed me to develop a deeper understanding of programming paradigms, data structures, and coding styles and find a passion for functional programming.
-I love well-structured code, thorough code-reviews and comprehensive test suites.
-Currently, I’d like to either contribute to a product where I’d be able to see the direct impact of my work or to immerse myself into development of a library where the main focus would be performance and code clarity.
+I am writing production code mainly in Scala and most recently Python which allowed me to develop a deeper understanding of programming paradigms, data structures, and coding styles and find a passion for functional programming.
 
 \section*{Professional Experience}
 \subsubsection*{\bf Senior Machine Learning Engineer \& Tech Lead - Blindspot.ai (Prague, Czechia) \hfill 09/2015--present}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item Leading a team of developers working on several analytical tasks for a US-based cybersec startup
-		\item Responsible for developing a real-time event-based anomaly detection platform using Apache Flink and Apache Spark
-		\item Prototyped regression model for the Czech presidential election which confidently predicted the outcome from less than 5\% of early results
-		\item Contributed to visualization and optimization toolbox which allowed a European fast-food company to optimize its supply chain by 80~km (50\%) or 1~hour (17\%) per delivery route
+		\item Leading a team of developers working on several analytical and ML tasks for a US-based cybersec startup
+		\item Responsible for developing a real-time event-based anomaly detection platform
+		\item Prototyped a regression model for the Czech presidential election which confidently predicted the outcome from less than 5\% of early results
 		\item Worked on toolbox designed to analyze correlations between crimes and external conditions like weather using data from a local police department
-		\item Developed custom-tailored software solutions for a variety of problems including data analysis and optimization
 	 \end{itemize}
 
 \subsubsection*{\bf DS12 Resident - DataScience Inc. (Culver City, CA, USA)\hfill summer 2016}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item 1 of 9 residents selected to participate in a 12-week elite, intensive residency program
-		\item Passed through rigorous admissions process with 2.5\% acceptance rate
+		\item 1 of 9 residents selected to participate in a 12-week elite, intensive residency program with 2.5\% acceptance rate
 		\item Developed a passion for FP concepts applicable to both Scala and other languages
 		\item Implemented recommendation system with real client data using ALS and pattern mining in Spark
 		\item Trained churn prediction model on real client data and identified several likely causes of churn
@@ -78,22 +65,25 @@ Currently, I’d like to either contribute to a product where I’d be able to s
 	 \end{itemize}
 
 \section*{Education}
-\subsubsection*{\bf Master’s degree (First-class honors) \hfill 09/2012--06/2015}
+\subsubsection*{\bf Master’s degree in Artificial Intelligence \hfill 09/2012--06/2015}
 \vspace{-1.5mm}
-Czech Technical University in Prague - Open Informatics - Artificial Intelligence
+Czech Technical University in Prague - Open Informatics \textit{(First-class honors)}
 \vspace{-1.5mm}
-\subsubsection*{\bf Bachelor’s degree \hfill 09/2009--06/2012}
+\subsubsection*{\bf Bachelor’s degree in Communication technology \hfill 09/2009--06/2012}
 \vspace{-1.5mm}
-Czech Technical University in Prague - Communication, Multimedia and Electronics - Communication technology
+Czech Technical University in Prague -
+Communication, Multimedia and Electronics
 
 \section*{Knowledge}
-\begin{description}
-	\setlength\itemsep{0.05em}
-	\item[Languages] Czech (Native), English (Fluent)
-	\item[Programming] Python, Scala, Java, Shell scripting, PostgreSQL, C/C++ (basics), HTML+JS (scraping) 
-	\item[DevOps] CI/CD tools, Docker, Terraform, Ansible, Networking (basics)
-	\item[Frameworks] Scikit-Learn Ecosystem, Pandas, NetworkX, Shapeless, Cats, Apache Spark, Apache Flink
-\end{description}
+\begin{labeling}{Programmingxxx}
+	\setlength\itemsep{-0.15em}
+    \item [\textbf{Languages}] Czech (Native), English (Fluent)
+    \item [\textbf{Programming}] Python, Scala, Java, Bash, Git, PostgreSQL, C/C++ (basics), HTML+JS (scraping)
+    \item [\textbf{Frameworks}] Scikit-Learn, Pandas, Shapeless, Cats, Apache Spark, Apache Flink, Jupyter
+    \item [\textbf{DevOps}] CI/CD, Docker, Terraform, Ansible, Networking (basics)
+    \item [\textbf{Skills}] Data Analytics, Data Cleaning, Machine Learning, Statistical Modeling
+    
+\end{labeling}
 
 \section*{Patents}
 Vojtech Letal, Tomas Pevny and Petr Somol. Discovering yet unknown malicious domains using relational data. {\it US Patent App. 14/844,379.}
@@ -105,8 +95,8 @@ Vojtech Letal, Tomas Pevny and Petr Somol. Discovering yet unknown malicious dom
 \bibentry{letal2015finding}.
 
 \section*{Activities}
-Rock climbing, Yoga, Meditations, Reading, Traveling, Designing peripherals for RPi, Repairing my 80' bike, Parenting
+Rock climbing, Yoga, Meditations, Reading, Traveling, Electronics, Biking, Parenting
 
-{\vfill
+\vfill
 
 \end{document}

@@ -1,7 +1,7 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 \usepackage{array, xcolor, lipsum, bibentry}
 \usepackage{scrextend}
-\usepackage[margin=1.2cm]{geometry}
+\usepackage[margin=1.0cm]{geometry}
 \usepackage{fancyhdr}
 %\usepackage[czech]{babel}
 \usepackage{scrextend}
@@ -9,8 +9,8 @@
 
 \geometry{
 	a4paper,
-	%bottom=10mm,
-	%top=10mm,
+	bottom=10mm,
+	top=10mm,
 }
 
 \begin{filecontents}{publication.bib}
@@ -30,83 +30,75 @@
 {\center\bfseries\huge Vojtech Letal}
 \hfill
 {\bf Email:} letal.vojtech@gmail.com
-{\bf Tel:} +420775330515
+{\bf Tel:} +41799314964
 {\bf Github:} \href{http://github.com/letalvoj}{letalvoj}
 
 \section*{About me}
-I am a machine learning engineer with rich experience including software engineering and applied research.
-During my career, I worked on several ML projects which taught me how to build a data processing pipelines and push models into production.
-I am writing production code mainly in Scala and most recently Python which allowed me to develop a deeper understanding of programming paradigms, data structures, and coding styles and find a passion for functional programming.
+I'm a passionate ML engineer with experience building and deploying models. I'm seeking new opportunities to help people make the most of LLMs in daily life.
 
 \section*{Professional Experience}
 \subsubsection*{\bf Software Engineer, Google (Zurich, Switzerland) \hfill 09/2022--present}
+    \begin{itemize}
+        \setlength\itemsep{-0.25em}
+        \item Main contributor to the launch of a new Gemini feature that allows users to select and modify response parts (achieving a 90\% response acceptance rate).
+        \item Curated high-quality datasets for fine-tuning and reward modeling using annotation and model distillation.
+        \item Trained and evaluated handwriting recognition transformer models for handwritten math recognition (20\% project).
+    \end{itemize}
+
 \subsubsection*{\bf Staff Scientist, AI - Avast s.r.o. (Prague, Czechia) \hfill 04/2021--08/2022}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item Personally recognized by the CEO Ondrej Vlcek as one of a small group of employees with high growth potential in 2021
-		\item Responsible for internal productization of a deep learning platform based on Mill.jl co-developed by Avast and CTU
-		\item Developed and maintained a directly user-facing DL pipeline which classified malware samples and provided insights to analysts by introspecting the model using game-theoretical approaches
+		\item Personally recognized by the CEO Ondrej Vlcek as one of a small group of employees with high growth potential.
+		\item Responsible for internal productization of a deep learning platform based on Mill.jl co-developed by Avast and CTU.
+		\item Developed and maintained a DL pipeline that classified malware samples, processing \textbf{all} user-reported malware samples in near-real time.
 	 \end{itemize}
 
 \subsubsection*{\bf Senior ML Engineer \& Tech Lead - Blindspot.ai (Prague, Czechia) \hfill 09/2015--04/2021}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item Leading a team of developers working on several analytical and ML tasks for a US-based cybersec startup
-		\item Responsible for developing a real-time event-based anomaly detection platform
-		\item Prototyped a regression model for the Czech presidential election which confidently predicted the outcome from less than 5\% of early results
-		\item Worked on toolbox designed to analyze correlations between crimes and external conditions like weather using data from a local police department
+		\item Leading a team of developers working on several analytical and ML tasks for a US-based cybersec startup.
+		\item Responsible for developing a real-time event-based anomaly detection platform.
+		\item Contributed to the popularization of regression modeling for live election counts in Czechia.
 	 \end{itemize}
 
 \subsubsection*{\bf DS12 Resident - DataScience Inc. (Culver City, CA, USA)\hfill summer 2016}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item 1 of 9 residents selected to participate in a 12-week elite, intensive residency program with 2.5\% acceptance rate
-		\item Developed a passion for FP concepts applicable to both Scala and other languages
-		\item Implemented recommendation system with real client data using ALS and pattern mining in Spark
-		\item Trained churn prediction model on real client data and identified several likely causes of churn
-		\item Designed scalable production ETL pipeline which outperformed legacy SQL-based solution 6x (20 min) and was 36x ($< 1\$$) cheaper to execute
+		\item 1 of 9 residents selected to participate in a 12-week elite, intensive residency program with 2.5\% acceptance rate.
+        \item Implemented recommendation system, churn prediction model, and scalable ETL pipeline costing 36x less per run.
 	 \end{itemize}
 
 \subsubsection*{R\&D - Cisco Systems (Prague, Czechia)\hfill 06/2014--08/2015}
 	 \begin{itemize}
 		\setlength\itemsep{-0.25em}
-		\item Worked in a team which developed state-of-the-art anomaly detection system on network traffic data
-		\item Implemented novel Bayesian inference algorithm to estimate probability of maliciousness of domains
-		\item Extensively used big data technologies such as Twitter Scalding and Apache Spark
+		\item Implemented novel Bayesian inference algorithm to estimate probability of maliciousness of domains.
+		\item Extensively used big data technologies such as Twitter Scalding and Apache Spark.
 	 \end{itemize}
 
 \section*{Education}
 \subsubsection*{\bf Master’s degree in Artificial Intelligence \hfill 09/2012--06/2015}
 \vspace{-1.5mm}
 Czech Technical University in Prague - Open Informatics \textit{(First-class honors)}
-\vspace{-1.5mm}
-\subsubsection*{\bf Bachelor’s degree in Communication technology \hfill 09/2009--06/2012}
-\vspace{-1.5mm}
-Czech Technical University in Prague -
-Communication, Multimedia and Electronics
 
 \section*{Knowledge}
-\begin{labeling}{Programmingxxx}
+\begin{labeling}{Programming}
 	\setlength\itemsep{-0.15em}
     \item [\textbf{Languages}] Czech (Native), English (Fluent)
-    \item [\textbf{Programming}] Python, Scala, Java, Bash, Git, PostgreSQL, C/C++, HTML+JS (scraping)
-    \item [\textbf{Frameworks}] Scikit-Learn, Pandas, Shapeless, Cats, Apache Spark, Apache Flink, Jupyter
-    \item [\textbf{DevOps}] CI/CD, Docker, Terraform, Ansible, Networking (basics)
-    \item [\textbf{Skills}] Data Analytics, Data Cleaning, Machine Learning, Statistical Modeling
-    
+    \item [\textbf{Programming}] Python, C/C++, Java/Kotlin, Scala, Bash, Git, SQL, Angular
+    \item [\textbf{Frameworks}] Tensorflow, Scikit-Learn, Pandas, Jupyter
+    \item [\textbf{Skills}] LLMs, Prompt Engineering, Parameter-Efficient Methods, Machine Learning
 \end{labeling}
 
 \section*{Patents}
-Vojtech Letal, Tomas Pevny and Petr Somol. Discovering yet unknown malicious domains using relational data. {\it US Patent App. 14/844,379.}
+Discovering yet unknown malicious domains using relational data. {\it US Patent: 10,320,823}
+\\
+Modifying Source Code Using Generative Models. {\it US Patent: Pending}
 
 \bibliographystyle{plain}
 \nobibliography{publication}
 
 \section*{Publications}
 \bibentry{letal2015finding}.
-
-\section*{Activities}
-Rock climbing, Yoga, Meditations, Reading, Traveling, Electronics, Biking, Parenting
 
 \vfill
 

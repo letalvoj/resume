@@ -6,4 +6,4 @@ all: clean
 	pdflatex $(DOCUMENT)
 
 clean:
-	rm $(DOCUMENT).aux $(DOCUMENT).bbl $(DOCUMENT).blg $(DOCUMENT).log || echo nothing to remove
+	rm $(DOCUMENT).aux $(DOCUMENT).bbl $(DOCUMENT).blg $(DOCUMENT).log $(DOCUMENT).out || echo nothing to remove
